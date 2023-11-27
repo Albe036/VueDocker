@@ -5,14 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "docker:build": "docker build -t az7:latest .",
-    "docker:run": "docker run -p 3000:3000 -v 'c:/Users/Albeiro Lozano/Desktop/docker-test/src/:/app/src/' -v /app/node_modules/ --name az7 -d az7:latest",
-    "docker:exec": "docker exec -it az7 /bin/bash",
-    "docker:logs": "docker logs -f az7",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "pinia": "^2.1.7",
     "vue": "^3.3.8",
     "vuetify": "^3.4.3"
   },
