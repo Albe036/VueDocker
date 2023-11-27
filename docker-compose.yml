@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  az7:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: volume
+        target: '/app/node_modules'
+      - type: bind
+        source: ./src
+        target: /app/src
+    ports:
+      - '3000:3000'
